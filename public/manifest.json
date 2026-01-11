@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Book",
+  "short_name": "Book",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
