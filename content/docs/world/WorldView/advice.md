@@ -1,0 +1,79 @@
+---
+title: Advice
+weight: 1
+---
+# Advice
+
+- Source: https://x.com/SahilBloom/status/2010376554199572482
+- I am 30 right now. In 5 years, I will be 35.
+- If I focus in the right way, we can achieve a lot in the next 5 years.
+- It is good to zoom out and see how to create a step-function change.
+
+----------------------------
+----------------------------
+
+- You're one year of focus away from people calling you lucky
+  - Most people overestimate what they can do in a day and underestimate what they can do in a year.
+  - Your entire life can change in one year. One year of focused, daily effort.
+  - One year of showing up with intention and clarity.
+- You can reinvent yourself whenever you want
+  - You are mostly not late.
+  - You can just do things
+- Tolerance for uncertainty OR how you handle ambiguity defines a lot of outcomes.
+  - The one who can tolerate the most uncertainty is the one who will eventually win.
+  - Your professional success is proportional to your ability to figure it out.
+  - Take pride in finishing things
+    - By doing what you said you’d do
+  - Real confidence is built on resilience. Adaptability. Tolerance for uncertainty
+  - Emotional control is the ultimate sign of personal growth
+- Showing up is the key to life
+  - Anything above zero compounds.
+  - Ambitious people allow optimal to get in the way of beneficial.
+  - Reliability is more important than talent.
+    - You can get pretty damn far in life by just being someone people can count on to do the work.
+- Nobody cares
+  - When you’re winning, nobody cares. When you’re losing, nobody cares.
+  - Learn to work without validation.
+  - Nobody is thinking about you.
+  - Nobody is coming to save you.
+- Always get your dopamine from action
+  - Dopamine from information gathering is a dangerous drug. 
+  - The real goal is to have a razor-thin gap between information and action
+  - Your entire life will change when you stop gathering information and start acting on the information you already have
+  - Do hard things every single day
+- Fear comes from inexperience, not incapability
+  - Inexperience is the problem to be solved—and it's only solved through having the courage to act in the face of it
+- Never let your head outsmart your gut
+  - Your gut is earned intuition—a refined, elevated biological protection mechanism
+  - My rule: If your gut says no, the answer is no.
+- The most important things take a long time to build
+  - Real, durable things take a long time to build. 
+  - Careers. Businesses. Relationships. Health
+  - The long way is the right way
+- Be unapologetically yourself
+- Do what most people avoid
+  - Doing opposite.
+  - Obsess over one thing.
+  - Have difficult conversations.
+- Your standards decide your future
+  - Every time you let something slide just this once, you train yourself to accept less than what you deserve
+  - Set your standards, then hold the line
+  - Even when it’s hard. Especially when it’s hard.
+- Choose a partner you actually like being around
+  - People make these long lists of values and traits they want to find in a partner, but so much of life just comes down to being kind and pleasant to be around
+  - And if you’re going to make a long list of values and traits you want to find in another, make sure you’re embodying them yourself
+- Don’t wait
+  - Just start. Take that crazy leap of faith.
+  - Opportunities don’t wait until you’re ready. Miss them now and you miss them forever.
+- Stress and anxiety feed on idleness
+  - You feel stressed and anxious because you’re not doing anything. 
+  - When you take action, you starve them of the oxygen they need to survive
+- You have to know when to stop
+  - Stop arguing with people who don’t listen. 
+  - Stop chasing people who run away. 
+  - Stop forcing relationships that drain you.
+  - Stop grinding on things that don’t matter.
+  - Stop saying yes when you mean no.
+- Don’t complain about anything
+  - If it’s within your control, go do something about it. 
+  - If it’s not, you’re just wasting energy thinking about it.
