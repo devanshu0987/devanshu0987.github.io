@@ -9,6 +9,9 @@ weight: 1
 - If I focus in the right way, we can achieve a lot in the next 5 years.
 - It is good to zoom out and see how to create a step-function change.
 
+----------------------------
+----------------------------
+
 - You're one year of focus away from people calling you lucky
   - Most people overestimate what they can do in a day and underestimate what they can do in a year.
   - Your entire life can change in one year. One year of focused, daily effort.
