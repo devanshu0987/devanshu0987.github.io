@@ -1,3 +1,11 @@
+---
+title: Impact of Agentic AI on the world
+weight: 1
+---
+# Impact of Agentic AI on the world
+
+- Source 1: [https://x.com/thedankoe/status/2010751592346030461](https://alapshah1.substack.com/p/the-global-intelligence-crisis)
+- Source 2: https://www.citriniresearch.com/p/2028gic
 
 ## Step-by-step logic
 
