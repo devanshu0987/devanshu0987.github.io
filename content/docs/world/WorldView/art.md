@@ -1,4 +1,10 @@
-1. Summary
+---
+title: Art
+weight: 1
+---
+# Leighton’s Cymon and Iphigenia (1884)
+
+## Summary
 
 - The essay discusses Lord Leighton’s Cymon and Iphigenia (1884) as a late 19th‑century Academic painting: idealized, “realistic” in style, and the opposite of modernism (e.g. Picasso).
 - The subject comes from Boccaccio’s Decameron: Cymon, a dull youth on Cyprus, sees Iphigenia asleep by a pond, falls in love, and is transformed into an accomplished gentleman.
@@ -8,7 +14,7 @@
 - The essay argues that reactions to the painting—sentimental vs. intoxicating—vary because people and tastes differ, and that’s fine.
 - It ends by linking the story to education: real learning starts when we “fall in love” with a subject; Montaigne is cited for the idea that teaching should inspire affection and curiosity rather than rely on force or rote.
 
-2. Key points to remember
+## Key points to remember
 - Cymon and Iphigenia = Lord Leighton, 1884; subject from Boccaccio’s Decameron (Cymon’s first sight of sleeping Iphigenia and his transformation through love).
 - Academic Art: taught in academies, “realistic” in technique but idealized in subject (history, myth, Bible); establishment taste.
 - Leighton’s mix: Academic classicism + Pre-Raphaelite/Nazarene intensity (color, texture, atmosphere, passion).
