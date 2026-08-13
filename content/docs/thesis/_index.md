@@ -1,5 +1,6 @@
 ---
 weight: 10
+BookCollapseSection: true
 ---
 
 # Introduction
