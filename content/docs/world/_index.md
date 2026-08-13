@@ -8,6 +8,9 @@ title: "World"
 
 ## I am Devanshu!!
 
-I am going into the world of databases.
+I am exploring the intersection of **data systems** and **machine learning systems**.
+
+- **datasys** — databases, storage engines, distributed data infrastructure
+- **mlsys** — model serving, inference optimization, ML system design
 
 I intend to write my notes here.

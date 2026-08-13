@@ -2,6 +2,7 @@
 title: Network school reading list
 weight: 1
 ---
+
 # Network school reading list
 
 ## Broad Ideas
@@ -20,21 +21,6 @@ weight: 1
 - [ ] The history of tech companies on the English and Chinese Internet
 
 ## Reading
-
-### Macrohistory
-- [ ] [Foundation](/docs/world/booknotes/foundation)
-- [ ] [The Lessons of History](/docs/world/booknotes/the-lessons-of-history)
-- [ ] [Unqualified Reservations](/docs/world/booknotes/unqualified-reservations)
-- [ ] [A Short History of Nearly Everything](/docs/world/booknotes/a-short-history-of-nearly-everything)
-- [ ] [The Selfish Gene](/docs/world/booknotes/the-selfish-gene)
-- [ ] [Albion's Seed](/docs/world/booknotes/albions-seed)
-- [ ] [War and Peace and War](/docs/world/booknotes/war-and-peace-and-war)
-- [ ] [Stalin's War](/docs/world/booknotes/stalins-war)
-- [ ] [Energy and Civilization](/docs/world/booknotes/energy-and-civilization)
-- [ ] [Who We Are and How We Got Here](/docs/world/booknotes/who-we-are-and-how-we-got-here)
-- [ ] [The Ancient City](/docs/world/booknotes/the-ancient-city)
-- [ ] [The Fourth Turning](/docs/world/booknotes/the-fourth-turning)
-- [ ] [The Grey Lady Winked](/docs/world/booknotes/the-grey-lady-winked)
 
 ### New Countries
 - [ ] Imagined Communities
