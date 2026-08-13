@@ -4,7 +4,7 @@ I'm a software engineer based in Bangkok, currently exploring the intersection o
 
 ---
 
-## Here's what I'm working on
+## Currently working on
 
 - **MLsys** — ML serving and inference optimization.
 - **Datasys** — databases, storage engines, distributed systems. The foundation.

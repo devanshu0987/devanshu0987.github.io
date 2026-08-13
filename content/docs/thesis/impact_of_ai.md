@@ -26,7 +26,7 @@ weight: 1
 
 ### Phase 3: Spending concentration (both)
 10. **Who gets displaced:** White-collar, high earners — the same people who **drive spending.** Article 1: top 20% ≈ 65% of US consumer spending; Article 2: top 10% >50%, top 20% ≈ 65%.
-11. **Leverage of job loss on demand:** A **small** % drop in white-collar employment → **large** % drop in discretionary spending (e.g. 2% employment → ~3–4% hit to discretionary spend). Plus **lag:** high earners use savings for a few quarters, then spending breaks (Article 2: initial claims 487k, then S&P -6%).
+11. **Effect of job loss on demand:** A **small** % drop in white-collar employment → **large** % drop in discretionary spending (e.g. 2% employment → ~3–4% hit to discretionary spend). Plus **lag:** high earners use savings for a few quarters, then spending breaks (Article 2: initial claims 487k, then S&P -6%).
 
 ### Phase 4: Intermediation layer dismantled (both)
 12. **Moat = human friction:** Decades of value built on: limited time, patience, habit, willingness to accept bad prices. **Trillions** of enterprise value on that.
@@ -77,7 +77,7 @@ weight: 1
 - **Stress-test your industry:** Is it intermediation (friction), “seats,” or ARR that assumes human labor? If yes, assume repricing and plan exit or pivot.
 
 **Household / financial**
-- **Reduce dependence on “prime borrower forever”:** Less leverage; don’t assume current income for 30 years; larger emergency buffer.
+- **Reduce dependence on “prime borrower forever”:** Reduce debt; don’t assume current income for 30 years; larger emergency buffer.
 - **Diversify income** (skills that work in essential services, gig, or roles less exposed to agent substitution).
 - **Assume** a possible **prolonged** demand shock and **repricing** of risk (equities, credit, real estate in tech-heavy metros).
 
@@ -96,4 +96,4 @@ weight: 1
 
 **Mindset**
 - **Combine both articles:** One is “from the future” (2028); the other is “from 2026.” Use the **combined** step-by-step logic above as your mental model: adoption → reflexivity → loop → intermediation → labor → financial daisy chain → fiscal trap → policy race.
-- **Use “canary still alive”:** If you treat the present as “before the loop has fully kicked in,” the priority is **assessment and preparation** (career, leverage, portfolio, policy) rather than panic.
+- **Use “canary still alive”:** If you treat the present as “before the loop has fully kicked in,” the priority is **assessment and preparation** (career, debt, portfolio, policy) rather than panic.

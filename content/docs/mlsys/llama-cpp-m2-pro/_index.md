@@ -9,11 +9,12 @@ title: Profiling LFM2.5-1.2B via llama.cpp
 - **Question** — Where does the time go when llama.cpp generates tokens on a MacBook?
 - **Setup** — A few days measuring LFM2.5-1.2B on an M2 Pro, writing down what survived and what died.
 - **TL;DR** — Token generation is stuck on memory bandwidth, both CPU and GPU.
-  - Relevant bandwidth is what I measured: **112 GB/s** from CPU cores, **154 GB/s** from GPU — not the 200 GB/s Apple prints for the whole chip.
+  - Relevant bandwidth is what I measured: **112 GB/s** from CPU cores,
+    **154 GB/s** from GPU — not the 200 GB/s Apple prints for the whole chip.
   - GPU generates tokens ~2× faster because it can pull harder on that same memory. The math is identical.
 
 | | CPU (`-ngl 0`) | GPU (`-ngl 999`) |
-|---|---:|---:|
+| --- | ---: | ---: |
 | Tokens/s | 56.4 | 115.5 |
 | Bandwidth reached | 110 GB/s inside the gemv | 144 GB/s over the token |
 | Measured ceiling | 112 GB/s | 154 GB/s |
@@ -26,7 +27,9 @@ title: Profiling LFM2.5-1.2B via llama.cpp
 
 ## Parts
 
-- **Part 1: [Setup and roofline](01-setup-and-roofline.md)** — The 200 GB/s number is wrong for this question. Measuring what the CPU and GPU can really read, with the benchmark code.
+- **Part 1: [Setup and roofline](01-setup-and-roofline.md)** — The 200 GB/s number
+  is wrong for this question. Measuring what the CPU and GPU can really read,
+  with the benchmark code.
 - **Part 2: CPU decode — the arc**
   - Baseline at t=8: gemv 42.6%, barrier 18% (the surprise)
   - Thread sweep: t=6 optimal, +25.6%. Barrier grew 1.31→3.61 ms from t=6→8
@@ -44,10 +47,13 @@ title: Profiling LFM2.5-1.2B via llama.cpp
   - Metal System Trace: **115.5 t/s**, GPU busy 99%, `kernel_mul_mv_q8_0_f32` = 93% shader time
   - Measuring GPU bandwidth with `bw_bench_gpu.m`: **154 GB/s** shared ceiling → 144/154 = **93%**
   - Same wall, wider pipe
-- **Part 5: Why the GPU pulls harder on the same memory** — Thousands of small threads keep the memory controller busy; a CPU core can only track a few dozen outstanding misses. The math is identical.
+- **Part 5: Why the GPU pulls harder on the same memory** — Thousands of small
+  threads keep the memory controller busy; a CPU core can only track a few
+  dozen outstanding misses. The math is identical.
 - **Part 6: Smaller weights — left the DRAM roof**
   - The one lever that cuts bytes
-  - Verdict rule (locked before running): within 10% of `115.5 × (1.246 / size)` → memory still rules. 15%+ below → dequant became the limit
+  - Verdict rule (locked before running): within 10% of `115.5 × (1.246 / size)` → memory still rules.
+    15%+ below → dequant became the limit
   - Q5_K_M: 120.9 t/s (−29%). Q4_K_M: 154.5 t/s (−22%). Both tripped — left the DRAM roof, now dequant-limited
 - **Part 7: Reading the Q4 Metal trace, and what it failed to prove**
   - Two shaders busy: `mul_mv_q4_K_f32` (62%) and `mul_mv_q6_K_f32` (26%)

@@ -18,16 +18,15 @@ in this series uses those two numbers.
 | | |
 |---|---|
 | Chip | Apple M2 Pro, 8 performance + 4 efficiency cores |
-| OS | macOS, MDM-managed work laptop, no Xcode at first |
+| OS | macOS |
 | Binary | llama.cpp `llama-cli`, build `3653e6d6d` |
 | Model | LFM2.5-1.2B-Instruct-Q8_0.gguf, 1.25 GB on disk |
 | Workload | one prompt, greedy, long generation |
 
-Two phases matter and they have different bottlenecks. Prefill reads your
-prompt and does batched matrix-matrix multiplies, which keep the ALUs busy.
-Decode generates one token at a time, which collapses those into
-matrix-vector multiplies. Every weight gets read once and used once, roughly
-one multiply-add per byte. This series is about decode.
+- Two phases matter and they have different bottlenecks. 
+    - Prefill reads your prompt and does batched matrix-matrix multiplies, which keep the ALUs busy.
+    - Decode generates one token at a time, which collapses those into matrix-vector multiplies. 
+        - Every weight gets read once and used once, roughly one multiply-add per byte. This series is about decode.
 
 ## Why I needed a ceiling at all
 

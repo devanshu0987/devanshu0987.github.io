@@ -8,7 +8,7 @@ weight: 1
 
 - Specializing in one skill is almost certain death.
   - Book: Range: Why generalists triumph in a sepcialized world. David Epstein.
-- Your curiosity and love for learning are your advantages in today’s world
+- Your curiosity and love for learning are your advantages in this world
 - Tutorial Hell
   - I got my dopamine from feeling smart, but my life didn’t change all that much
 
@@ -62,7 +62,7 @@ weight: 1
 - Trust and signal are more important than ever.
 - In my opinion, the guiding light for your content should be to curate the best possible ideas in one place. Your brand is a collection of all the ideas you care about, in your own words, under one account on the internet.
 - Best speakers always have 5-10 of their best arguments or ideas top of mind.
-- The goal of curating ideas to include under your brand should fall at the intersection of:
+- The goal of curating ideas to include under your brand should fall where two circles overlap:
   - Performance – the ideas have the potential to “do well.” This is the measure of how much other people will care.
   - Excitement – the ideas give you a sense of excitement to write about them. This is the measure of how much you care.
 - Step 1: Build an idea museum

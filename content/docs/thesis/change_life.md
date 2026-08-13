@@ -17,7 +17,7 @@ weight: 1
     - The bodybuilder has to grind to eat unhealthily.
     - They simply enjoy living this way.
 - If you want a specific outcome in life, you must have the lifestyle that creates that outcome long before you reach it.
-- When you truly change yourself, all of your habits that don’t move the needle toward your goal become disgusting, because you have a deep and profound awareness of what kind of life those actions compound into.
+- When you truly change yourself, all of your habits that don’t serve your goal become disgusting, because you have a deep awareness of what kind of life those actions compound into.
 
 ## You aren’t where you want to be because you don’t want to be there
 - The first step to understanding the mind is to understand that all behavior is goal-oriented.

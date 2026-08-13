@@ -44,7 +44,7 @@ weight: 1
 - Fear comes from inexperience, not incapability
   - Inexperience is the problem to be solved—and it's only solved through having the courage to act in the face of it
 - Never let your head outsmart your gut
-  - Your gut is earned intuition—a refined, elevated biological protection mechanism
+  - Your gut is earned intuition—a refined, high-level biological protection mechanism
   - My rule: If your gut says no, the answer is no.
 - The most important things take a long time to build
   - Real, durable things take a long time to build. 
