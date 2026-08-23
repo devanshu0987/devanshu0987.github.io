@@ -41,7 +41,7 @@ Thread count:
 - This machine: 12 threads (8P + 4E).
 - Those 12 threads become the `ggml_graph_compute_thread` workers.
 
-## Thread count changes everything
+## Thread count swings generation 6.5×
 
 Same command, three thread counts, 1000 generated tokens each:
 
@@ -160,8 +160,8 @@ Where the waiting happens (trace backtraces):
 
 - ~70% of barrier samples sit under `forward_mul_mat`.
 - ~23% sit under `flash_attn_ext`.
-- The picture: threads that finished their chunk of a node, spinning until the
-  last straggler arrives.
+- Threads that finished their chunk of a node spin until the last straggler
+  arrives.
 
 Disassembled (objdump of `libggml-cpu.dylib`, build `3653e6d6d`), the barrier
 is a spin loop. This snippet is the copy inlined into
@@ -181,7 +181,7 @@ yield                       ; hint to the core: "I am spinning"
 - Some barrier call sites inline into the worker loop, some call the
   standalone symbol. Both spin.
 
-What it means:
+In practice:
 
 - No sleeping, no futex.
 - A core executes this loop flat out until the last thread shows up.
@@ -197,8 +197,7 @@ At t=1 the situation inverts:
   never even sampled.
 - The graph loop itself is almost free: dispatch outside any kernel measures
   **0.017 ms/token** (0.06% of decode, ~60 ns per node).
-- The graph loop is not expensive. Coordinating 12 threads through it, 270
-  times per token, is expensive.
+- What costs is coordinating 12 threads through it, 270 times per token.
 
 Why threads stop helping:
 
@@ -221,7 +220,7 @@ Why threads stop helping:
     - E-core threads finish their chunks last.
     - Every one of the ~270 barriers waits for the slowest arrival.
     - Default scheduler placement; affinity not measured.
-- Threads beyond a handful cannot make decode faster. Here they make it much
+- Threads beyond a handful cannot make decode faster. Here they make it 3.2×
   slower.
 - Why exactly 6 threads wins is a bandwidth question. It comes back in Part 2.
 
@@ -325,22 +324,12 @@ The per-iteration budget makes the same point from the other direction:
 | Useful work per iteration | 4 cols × 32 weights = **128 MACs** |
 | Arithmetic intensity | **0.94 MAC/byte** |
 
-- Every weight byte is loaded from DRAM and used exactly once. That is the
-  arithmetic-intensity signature of decode.
+- Every weight byte is loaded from DRAM and used exactly once.
 - Compute is nowhere near the limit:
   - ~2.4 GFLOP per token against multi-TFLOP/s cores.
   - Tens of thousands of tokens/s on paper.
-- The only thing that can bind this kernel is the rate the bytes arrive.
 
 ## The bottleneck: weight transfer from DRAM to CPU
-
-The whole chain:
-
-- t=12 loses because barriers, not compute, own the machine. Threads are not
-  the lever.
-- At t=1, one kernel is 81.6% of decode: the gemv streaming the weights.
-- Inside that kernel, the core waits for data. The arithmetic intensity
-  (~1 MAC/byte) says it always will.
 
 The byte audit:
 
@@ -358,7 +347,7 @@ The hypothesis:
   KV cache, far below any DRAM ceiling, because its cost is scalar compute
   per position, not bytes. Faster memory does not touch it.
 
-Which raises the only question that matters: is 55.2 GB/s good?
+Is 55.2 GB/s good?
 
 - Apple prints 200 GB/s for the M2 Pro.
   - That is the whole chip (CPU, GPU, everything) talking to memory.
@@ -371,9 +360,8 @@ Which raises the only question that matters: is 55.2 GB/s good?
     floor ≈ **90 tokens/s**.
   - Measured: 36.5 t/s. A ~2.5× gap, not 4.4×.
 - If the real CPU-reachable ceiling is much lower:
-  - The kernel may already be nearly perfect.
-  - Nothing to find.
+  - The gemv may already be at it.
+  - Part 2 would be a short post.
 
-Nobody has measured it. That is Part 2: a DRAM read benchmark for this
-machine, and the roofline that settles whether 55.2 GB/s is a problem or
-the answer.
+I have not measured it. That is Part 2: a DRAM read benchmark for this
+machine, to find the real CPU-reachable ceiling and compare it to 55.2 GB/s.

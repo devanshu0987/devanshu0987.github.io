@@ -20,4 +20,4 @@ title: Profiling LFM2.5-1.2B via llama.cpp
   - The thread sweep, the barrier, the t=1 profile, the kernel disassembly.
   - Ends on the hypothesis: weight transfer from DRAM to CPU is the limit.
 - **Part 2 (not yet written)**: a DRAM read benchmark for this machine, to
-  settle whether 55.2 GB/s is a problem or the answer.
+  find the real CPU-reachable ceiling and compare it to 55.2 GB/s.
