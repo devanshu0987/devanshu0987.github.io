@@ -1,0 +1,25 @@
+// Project override of themes/hugo-book/assets/book.scss.
+// Theme variables use !default, so declaring them before the imports wins.
+// Default container is 80rem; menu (16rem) + ToC (16rem) leave only ~48rem of
+// text. 100rem widens the article column to ~68rem on large screens.
+$container-max-width: 100rem;
+
+@import "defaults";
+@import "variables";
+
+@import "normalize";
+@import "utils";
+@import "main";
+@import "fonts";
+@import "print";
+
+@import "markdown";
+@import "shortcodes";
+
+// Custom defined styles, theme mixins also placed there
+@import "custom";
+
+// Select theme mixing based on site parameter
+:root {
+  @include theme-{{ default "light" .Site.Params.BookTheme }};
+}
